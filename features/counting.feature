@@ -1,3 +1,4 @@
+@counting
 Feature: Counting
   In order to count the number of clicks on a link
   As a user

@@ -6,10 +6,10 @@ import org.apache.wicket.util.tester.WicketTester;
 import cuke4duke.Given;
 import cuke4duke.Then;
 
-public abstract class WicketSteps {
-	private WicketTester tester;
+public class WicketSteps {
+	private static WicketTester tester;
 
-	protected WicketSteps(WebApplication application) {
+	public static void setApplication(WebApplication application) {
 		tester = new WicketTester(application);
 	}
 
